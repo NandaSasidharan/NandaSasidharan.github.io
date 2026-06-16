@@ -2,6 +2,10 @@
    NSR Website — Shared JavaScript
    ============================================================ */
 
+// Mark JS as active immediately — enables scroll animations in CSS.
+// Without this, .reveal elements default to fully visible (safe fallback).
+document.documentElement.classList.add('js-ready');
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Theme Toggle ── */
@@ -53,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.classList.toggle('open');
     mobileNav?.classList.toggle('open');
   });
-  // Close on link click
   document.querySelectorAll('.mobile-nav a').forEach(a => {
     a.addEventListener('click', () => {
       hamburger?.classList.remove('open');
@@ -61,18 +64,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── Reveal on Scroll (Intersection Observer) ── */
+  /* ── Reveal on Scroll ── */
   const revealEls = document.querySelectorAll('.reveal');
-  if (revealEls.length) {
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(el => io.observe(el));
+  if (!revealEls.length) return;
+
+  // Fallback for browsers without IntersectionObserver
+  if (!('IntersectionObserver' in window)) {
+    revealEls.forEach(el => el.classList.add('visible'));
+    return;
   }
+
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+  revealEls.forEach(el => io.observe(el));
+
+  // Immediately reveal anything already in the viewport on page load
+  // (observer can miss elements present before it's set up)
+  requestAnimationFrame(() => {
+    revealEls.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add('visible');
+      }
+    });
+  });
 
 });

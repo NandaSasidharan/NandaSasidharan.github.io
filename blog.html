@@ -51,9 +51,11 @@
       gap: 0.5rem;
       max-width: 420px;
       margin: 1.5rem auto 0;
+      flex-wrap: wrap;
     }
     .subscribe-input input {
       flex: 1;
+      min-width: 180px;
       padding: 0.7rem 1rem;
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -65,9 +67,7 @@
       transition: border-color var(--transition);
     }
     .subscribe-input input:focus { border-color: var(--accent); }
-    @media (max-width: 480px) {
-      .subscribe-input { flex-direction: column; }
-    }
+    .subscribe-input button { flex-shrink: 0; }
   </style>
 </head>
 <body>

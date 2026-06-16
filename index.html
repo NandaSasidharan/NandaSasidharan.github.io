@@ -57,11 +57,11 @@
 <main>
 <section class="hero" style="padding-top: calc(var(--nav-h) + 4rem); padding-bottom: 5rem;">
   <div class="container">
-    <div class="hero-grid" style="display:grid; grid-template-columns: 1fr 340px; gap: 4rem; align-items: center;">
+    <div class="hero-grid" style="display:grid; grid-template-columns: 1fr min(320px, 45%); gap: 4rem; align-items: center;">
 
       <!-- Text -->
       <div>
-        <p class="section-label reveal">Researcher of Intelligence · Zurich</p>
+        <p class="section-label reveal">Intelligence Researcher · Zurich</p>
         <h1 class="reveal reveal-delay-1" style="margin-bottom:1.2rem;">
           Nandakumar<br>
           <span style="color:var(--accent);">Sasidharan</span><br>
@@ -121,9 +121,10 @@
       </div>
 
       <!-- Photo -->
-      <div class="reveal reveal-delay-2" style="display:flex;justify-content:center;">
+      <div class="photo-col reveal reveal-delay-2" style="display:flex;justify-content:center;">
         <div class="photo-wrap" style="
-          width:300px; height:360px;
+          width: min(300px, 100%);
+          aspect-ratio: 5/6;
           border-radius:var(--radius-lg);
           overflow:hidden;
           border:1px solid var(--border);
@@ -133,15 +134,13 @@
           position:relative;
         ">
           <!-- REPLACE WITH YOUR PHOTO: swap the div below with <img src="photo.jpg" alt="Nandakumar Sasidharan Rajalekshmi" style="width:100%;height:100%;object-fit:cover;"> -->
-          <img src="Q68A8946_1.jpg" alt="Nandakumar Sasidharan Rajalekshmi" style="width:100%;height:100%;object-fit:cover;">
-          <!-- <div style="text-align:center;padding:2rem;">
+          <div style="text-align:center;padding:2rem;">
             <div style="width:80px;height:80px;border-radius:50%;background:var(--accent);opacity:0.2;margin:0 auto 1rem;"></div>
-            <p style="font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--text-subtle);"> -->
-              <!-- REPLACE WITH YOUR PHOTO -->
-               <!-- <br>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:0.9rem;color:var(--text-subtle);">
+              <!-- REPLACE WITH YOUR PHOTO --><br>
               Recommended: LinkedIn<br>profile picture
             </p>
-          </div> -->
+          </div>
           <!-- Decorative accent corner -->
           <div style="position:absolute;top:-12px;right:-12px;width:80px;height:80px;border:2px solid var(--accent);border-radius:var(--radius);opacity:0.3;pointer-events:none;"></div>
         </div>
@@ -157,7 +156,7 @@
 <!-- ════════════════════════ ABOUT SNAPSHOT ════════════════════════ -->
 <section style="padding:4rem 0;background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2.5rem;text-align:center;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:2.5rem;text-align:center;">
       <div class="reveal">
         <p style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--accent);font-weight:300;">PhD</p>
         <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.3rem;">NJIT · 2019</p>
@@ -248,7 +247,7 @@
 <!-- ════════════════════════ LATEST / CONNECT ════════════════════════ -->
 <section style="background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+    <div class="two-col">
 
       <!-- Current work -->
       <div class="reveal">
