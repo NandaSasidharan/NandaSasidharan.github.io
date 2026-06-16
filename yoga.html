@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Journey — Nandakumar Sasidharan Rajalekshmi</title>
+  <meta name="description" content="Yoga teacher, Isha Foundation Gurukulam 1750-hour training, teaching in Kerala and Switzerland.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-item {
+      aspect-ratio: 4/3;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .gallery-placeholder {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .yoga-philosophy-list {
+      list-style: none;
+      counter-reset: yoga-counter;
+    }
+    .yoga-philosophy-list li {
+      counter-increment: yoga-counter;
+      padding: 1rem 0 1rem 3.5rem;
+      border-bottom: 1px solid var(--border-light);
+      position: relative;
+      font-size: 0.92rem;
+    }
+    .yoga-philosophy-list li::before {
+      content: counter(yoga-counter, decimal-leading-zero);
+      position: absolute;
+      left: 0; top: 1rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">N<span>.</span>S<span>.</span>R</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="yoga.html">Yoga</a></li>
+      <li><a href="theory.html">Consciousness Theory</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" aria-label="Toggle theme"><span class="theme-icon"></span></button>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="yoga.html">Yoga</a></li>
+    <li><a href="theory.html">Consciousness Theory</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<main>
+
+<!-- PAGE HEADER -->
+<section class="page-top" style="padding-bottom:3rem;border-bottom:1px solid var(--border);">
+  <div class="container">
+    <p class="section-label reveal" style="color:var(--accent-warm);">Inner Laboratory</p>
+    <h1 class="reveal reveal-delay-1" style="color:var(--accent-warm);">The Yoga Journey</h1>
+    <p class="lead reveal reveal-delay-2" style="max-width:600px;margin-top:1rem;">
+      From silicon to silence — how contemplative practice became 
+      an indispensable dimension of understanding intelligence.
+    </p>
+  </div>
+</section>
+
+<!-- PERSONAL STORY -->
+<section>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+
+      <!-- Story -->
+      <div>
+        <p class="section-label reveal" style="color:var(--accent-warm);">Origin</p>
+        <h2 class="reveal reveal-delay-1" style="margin-bottom:1.5rem;">How It Began</h2>
+
+        <p class="reveal" style="margin-bottom:1rem;font-size:0.95rem;">
+          In 2021, after years of probing the nature of intelligence through 
+          transistors and training algorithms, a different kind of question arose: 
+          <em>What is the experiencer of all this computation?</em> What is the 
+          perceiving subject that my research was so carefully circumnavigating?
+        </p>
+        <p class="reveal" style="margin-bottom:1rem;font-size:0.95rem;">
+          That question led me to Yoga — not as fitness, but as a rigorous 
+          system of inner science. In 2021, I took my first steps into Hatha Yoga 
+          and meditation, and something shifted irreversibly.
+        </p>
+        <p class="reveal" style="margin-bottom:1rem;font-size:0.95rem;">
+          What I found was not mysticism, but methodology. Yoga offered 
+          a first-person laboratory for the very questions neuroscience and AI 
+          approach from the outside in.
+        </p>
+      </div>
+
+      <!-- Training timeline -->
+      <div>
+        <p class="section-label reveal" style="color:var(--accent-warm);">Training</p>
+        <h2 class="reveal reveal-delay-1" style="margin-bottom:1.5rem;">Isha Foundation Gurukulam</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal" style="--dot-color:var(--accent-warm);">
+            <p class="timeline-date" style="color:var(--accent-warm);">2021</p>
+            <h4>First encounter with Yoga</h4>
+            <p style="font-size:0.88rem;">Personal practice and introductory programs. Began exploring the relationship between inner experience and scientific enquiry.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <p class="timeline-date" style="color:var(--accent-warm);">Intensive Training</p>
+            <h4>1750-Hour Teacher Training</h4>
+            <p style="font-size:0.88rem;">
+              Full immersive program at the 
+              <strong>Isha Foundation Gurukulam</strong>, 
+              Coimbatore Ashram, under <strong>Sadhguru</strong>. 
+              One of the most comprehensive Hatha Yoga teacher training 
+              programmes in the world.
+            </p>
+            <div style="margin-top:0.6rem;display:flex;flex-wrap:wrap;gap:0.4rem;">
+              <span class="tag" style="background:rgba(139,94,60,0.1);color:var(--accent-warm);">Hatha Yoga</span>
+              <span class="tag" style="background:rgba(139,94,60,0.1);color:var(--accent-warm);">Meditation</span>
+              <span class="tag" style="background:rgba(139,94,60,0.1);color:var(--accent-warm);">Pranayama</span>
+              <span class="tag" style="background:rgba(139,94,60,0.1);color:var(--accent-warm);">Yogasanas</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <p class="timeline-date" style="color:var(--accent-warm);">Kerala, India</p>
+            <h4>Teaching in Kerala</h4>
+            <p style="font-size:0.88rem;">Classes, workshops, and retreats across Kerala, bringing classical Hatha Yoga to a wide range of practitioners.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <p class="timeline-date" style="color:var(--accent-warm);">Switzerland</p>
+            <h4>Teaching in Switzerland</h4>
+            <p style="font-size:0.88rem;">
+              Classes and retreats in Zürich and at 
+              <strong>Kientalerhof</strong> seminar hotel — 
+              an extraordinary setting in the Bernese Oberland 
+              for immersive practice.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section style="padding:3rem 0;background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container-narrow">
+    <blockquote class="reveal" style="border-left-color:var(--accent-warm);">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;">
+        "Yoga is not about touching your toes. It is about what you learn 
+        on the way down — about the nature of the perceiver."
+      </p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section>
+  <div class="container">
+    <p class="section-label reveal" style="color:var(--accent-warm);">Philosophy</p>
+    <h2 class="reveal reveal-delay-1" style="margin-bottom:1rem;">
+      Yoga as Experiential Science
+    </h2>
+    <p class="reveal reveal-delay-2" style="max-width:640px;margin-bottom:3rem;">
+      For me, Yoga is not separate from research — it <em>is</em> research, 
+      conducted from the inside. Here is how they inform each other:
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;">
+      <div>
+        <ul class="yoga-philosophy-list reveal">
+          <li>
+            <strong>The observer problem in AI.</strong> Every neural network requires 
+            a loss signal — a reference point. Yoga asks: what is the reference 
+            point in human experience? Who or what is the "loss function" of consciousness?
+          </li>
+          <li>
+            <strong>Stillness as ground state.</strong> Deep meditative states reveal 
+            a baseline of pure awareness — analogous to the quantum vacuum, 
+            a state of zero excitation from which all experience arises.
+          </li>
+          <li>
+            <strong>Precision in the body.</strong> Classical Hatha Yoga cultivates 
+            extraordinary sensitivity to subtle internal states — a precision 
+            instrument of self-study unavailable to third-person science.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="yoga-philosophy-list reveal" style="counter-reset:yoga-counter 3;">
+          <li>
+            <strong>Perception before cognition.</strong> Yogic inquiry distinguishes 
+            raw perception from conceptual overlay — mirroring the 
+            neuroscientific distinction between primary sensory cortex 
+            and higher association areas.
+          </li>
+          <li>
+            <strong>Non-dual awareness.</strong> Advanced contemplative states 
+            challenge the subject/object duality fundamental to classical 
+            physics — and invite new models of information and consciousness.
+          </li>
+          <li>
+            <strong>Integration, not conflict.</strong> The rigour of science and 
+            the depth of inner inquiry are not in tension. They are complementary 
+            epistemologies — two lenses on the same reality.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section style="background:var(--bg-card);border-top:1px solid var(--border);">
+  <div class="container">
+    <p class="section-label reveal" style="color:var(--accent-warm);">Gallery</p>
+    <h2 class="reveal reveal-delay-1" style="margin-bottom:2rem;">Classes & Retreats</h2>
+
+    <div class="gallery-grid">
+
+      <!-- REPLACE each div below with <img src="your-image.jpg" alt="description"> inside .gallery-item -->
+
+      <div class="gallery-item reveal">
+        <div class="gallery-placeholder">
+          <p style="font-size:0.75rem;color:var(--text-subtle);">
+            <!-- REPLACE WITH PHOTO --><br>
+            Class photo — Kerala, India
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-1">
+        <div class="gallery-placeholder">
+          <p style="font-size:0.75rem;color:var(--text-subtle);">
+            <!-- REPLACE WITH PHOTO --><br>
+            Retreat — Kientalerhof, Switzerland
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-2">
+        <div class="gallery-placeholder">
+          <p style="font-size:0.75rem;color:var(--text-subtle);">
+            <!-- REPLACE WITH PHOTO --><br>
+            Isha Foundation Gurukulam
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-3">
+        <div class="gallery-placeholder">
+          <p style="font-size:0.75rem;color:var(--text-subtle);">
+            <!-- REPLACE WITH PHOTO --><br>
+            Teaching in Zürich
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-placeholder">
+          <p style="font-size:0.75rem;color:var(--text-subtle);">
+            <!-- REPLACE WITH PHOTO --><br>
+            Outdoor class / workshop
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-1">
+        <div class="gallery-placeholder">
+          <p style="font-size:0.75rem;color:var(--text-subtle);">
+            <!-- REPLACE WITH PHOTO --><br>
+            Meditation session
+          </p>
+        </div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+
+    <p style="font-size:0.8rem;color:var(--text-subtle);margin-top:1.5rem;font-family:'DM Mono',monospace;text-align:center;">
+      Replace gallery placeholders: add <code>src="your-photo.jpg"</code> inside each .gallery-item
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:4rem 0;">
+  <div class="container-narrow" style="text-align:center;">
+    <h2 class="reveal" style="margin-bottom:1rem;">Interested in a Class or Retreat?</h2>
+    <p class="reveal reveal-delay-1" style="margin-bottom:2rem;">
+      I teach in Zürich and organise retreats in the Swiss Alps and Kerala. 
+      Reach out to explore upcoming programmes.
+    </p>
+    <a href="contact.html" class="btn btn-primary reveal reveal-delay-2">Get In Touch</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="nav-logo" style="font-size:1.1rem;">N<span>.</span>S<span>.</span>R</a>
+    <nav class="footer-links">
+      <a href="research.html">Research</a>
+      <a href="yoga.html">Yoga</a>
+      <a href="theory.html">Theory</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2025 Nandakumar Sasidharan Rajalekshmi · Zürich</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

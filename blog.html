@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Nandakumar Sasidharan Rajalekshmi</title>
+  <meta name="description" content="Essays at the intersection of consciousness theory, neuromorphic computing, yoga, and contemplative science.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .blog-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      transition: all var(--transition);
+      opacity: 0.65;
+      cursor: default;
+      position: relative;
+    }
+    .blog-card.coming-soon::after {
+      content: 'Coming Soon';
+      position: absolute;
+      top: 1.2rem; right: 1.2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 99px;
+    }
+    .blog-category {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .subscribe-box {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      background: var(--accent-light);
+      text-align: center;
+    }
+    .subscribe-input {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 420px;
+      margin: 1.5rem auto 0;
+    }
+    .subscribe-input input {
+      flex: 1;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color var(--transition);
+    }
+    .subscribe-input input:focus { border-color: var(--accent); }
+    @media (max-width: 480px) {
+      .subscribe-input { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">N<span>.</span>S<span>.</span>R</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="yoga.html">Yoga</a></li>
+      <li><a href="theory.html">Consciousness Theory</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" aria-label="Toggle theme"><span class="theme-icon"></span></button>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="yoga.html">Yoga</a></li>
+    <li><a href="theory.html">Consciousness Theory</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<main>
+
+<!-- PAGE HEADER -->
+<section class="page-top" style="padding-bottom:3rem;border-bottom:1px solid var(--border);">
+  <div class="container">
+    <p class="section-label reveal">Essays & Reflections</p>
+    <h1 class="reveal reveal-delay-1">Blog</h1>
+    <p class="lead reveal reveal-delay-2" style="max-width:580px;margin-top:1rem;">
+      Writing at the intersection of consciousness, neuroscience, 
+      neuromorphic computing, and contemplative practice.
+    </p>
+    <p class="reveal reveal-delay-3" style="margin-top:0.75rem;font-size:0.82rem;color:var(--text-subtle);font-family:'DM Mono',monospace;">
+      First posts coming soon · Subscribe below for updates
+    </p>
+  </div>
+</section>
+
+<!-- COMING SOON POSTS -->
+<section>
+  <div class="container">
+    <p class="section-label reveal">Upcoming</p>
+    <h2 class="reveal reveal-delay-1" style="margin-bottom:2.5rem;">Essays in Progress</h2>
+
+    <div class="grid-2" style="gap:1.5rem;">
+
+      <!-- Post 1 -->
+      <div class="blog-card coming-soon reveal">
+        <p class="blog-category">Consciousness Theory</p>
+        <h3 style="margin-bottom:0.6rem;font-size:1.25rem;">
+          The Measurement Problem as a Consciousness Problem
+        </h3>
+        <p style="font-size:0.88rem;margin-bottom:1rem;">
+          How the quantum measurement problem — what causes wavefunction collapse, 
+          and who or what "observes" — might be the same question as: 
+          what is the subject of conscious experience? Exploring the deep 
+          parallel between physics and philosophy of mind.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="tag">Quantum Mechanics</span>
+          <span class="tag">Consciousness</span>
+          <span class="tag">Philosophy of Physics</span>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="blog-card coming-soon reveal reveal-delay-1">
+        <p class="blog-category">Neuromorphic AI</p>
+        <h3 style="margin-bottom:0.6rem;font-size:1.25rem;">
+          Does Your Neural Network Have a Ground State?
+        </h3>
+        <p style="font-size:0.88rem;margin-bottom:1rem;">
+          An engineering perspective on the consciousness hypothesis. 
+          If intelligence requires a stable zero-reference, what does 
+          that mean for hardware design? Exploring reset mechanisms 
+          in Phase-Change Memory, equilibrium states in analog AI, 
+          and what biology might be doing that silicon isn't.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="tag">Neuromorphic Computing</span>
+          <span class="tag">PCM</span>
+          <span class="tag">AI Hardware</span>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="blog-card coming-soon reveal">
+        <p class="blog-category">Contemplative Science</p>
+        <h3 style="margin-bottom:0.6rem;font-size:1.25rem;">
+          What Meditation Teaches About Reference Frames
+        </h3>
+        <p style="font-size:0.88rem;margin-bottom:1rem;">
+          In deep meditative states, the ordinary subject-object 
+          boundary dissolves. What remains? Exploring how this 
+          first-person phenomenology maps to the theoretical 
+          concept of the universal ground state, and what 
+          neuroscience might be able to say about it.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="tag">Meditation</span>
+          <span class="tag">Neuroscience</span>
+          <span class="tag">Phenomenology</span>
+        </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="blog-card coming-soon reveal reveal-delay-1">
+        <p class="blog-category">Integration</p>
+        <h3 style="margin-bottom:0.6rem;font-size:1.25rem;">
+          From Bits to Beings: Information, Perception, and the Hard Problem
+        </h3>
+        <p style="font-size:0.88rem;margin-bottom:1rem;">
+          Chalmers' "hard problem" asks why there is something it is 
+          like to be a system processing information. This essay argues 
+          that the problem dissolves when perception is recognised 
+          not as a product of information processing, but as its 
+          precondition — with the universal ground state providing 
+          the necessary zero reference.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="tag">Hard Problem</span>
+          <span class="tag">Information Theory</span>
+          <span class="tag">Philosophy</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section style="padding:4rem 0;background:var(--bg-card);border-top:1px solid var(--border);">
+  <div class="container-narrow">
+    <div class="subscribe-box reveal">
+      <p class="section-label" style="justify-content:center;">Stay Updated</p>
+      <h2 style="margin-bottom:0.8rem;">Get Notified When I Publish</h2>
+      <p style="font-size:0.9rem;max-width:400px;margin:0 auto;">
+        No spam, no frequency commitment. Just an email when a new essay is ready.
+      </p>
+      <!-- REPLACE action with your Formspree / Mailchimp / Substack link -->
+      <div class="subscribe-input">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" />
+        <button class="btn btn-primary" type="button">
+          Notify Me
+        </button>
+      </div>
+      <p style="font-size:0.75rem;color:var(--text-subtle);margin-top:1rem;">
+        Or follow on 
+        <a href="https://www.linkedin.com/in/nandakumarsr/" target="_blank" rel="noopener">LinkedIn</a>
+        for updates.
+        <!-- ADD Medium/Substack link when ready -->
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- READING LIST TEASER -->
+<section style="padding:4rem 0;">
+  <div class="container">
+    <p class="section-label reveal">Intellectual Diet</p>
+    <h2 class="reveal reveal-delay-1" style="margin-bottom:1rem;">Sources of Inspiration</h2>
+    <p class="reveal reveal-delay-2" style="margin-bottom:2rem;max-width:560px;">
+      The essays will draw on this constellation of thinkers 
+      and fields — a map of the intellectual territory:
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:0.6rem;" class="reveal reveal-delay-3">
+      <span class="tag">Roger Penrose</span>
+      <span class="tag">David Chalmers</span>
+      <span class="tag">Giulio Tononi · IIT</span>
+      <span class="tag">Henry Stapp</span>
+      <span class="tag">Karl Friston · Free Energy</span>
+      <span class="tag">Antonio Damasio</span>
+      <span class="tag">Francisco Varela</span>
+      <span class="tag">Sadhguru</span>
+      <span class="tag">Quantum Vacuum · QFT</span>
+      <span class="tag">Non-equilibrium Thermo</span>
+      <span class="tag">Yoga Sutras of Patanjali</span>
+      <span class="tag">Vedantic Philosophy</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="nav-logo" style="font-size:1.1rem;">N<span>.</span>S<span>.</span>R</a>
+    <nav class="footer-links">
+      <a href="research.html">Research</a>
+      <a href="yoga.html">Yoga</a>
+      <a href="theory.html">Theory</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2025 Nandakumar Sasidharan Rajalekshmi · Zürich</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Nandakumar Sasidharan Rajalekshmi</title>
+  <meta name="description" content="Get in touch with Nandakumar Sasidharan Rajalekshmi — research collaboration, yoga classes, or consciousness theory discussions.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .contact-form label {
+      display: block;
+      font-size: 0.78rem;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+      margin-top: 1.4rem;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      appearance: none;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus,
+    .contact-form select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+    .contact-form textarea { resize: vertical; min-height: 150px; }
+    .contact-form .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 480px) {
+      .contact-form .form-row { grid-template-columns: 1fr; }
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .info-item:last-child { border-bottom: none; }
+    .info-icon {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--accent-light);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--accent);
+    }
+    .form-success.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">N<span>.</span>S<span>.</span>R</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="yoga.html">Yoga</a></li>
+      <li><a href="theory.html">Consciousness Theory</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" aria-label="Toggle theme"><span class="theme-icon"></span></button>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="yoga.html">Yoga</a></li>
+    <li><a href="theory.html">Consciousness Theory</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<main>
+
+<!-- PAGE HEADER -->
+<section class="page-top" style="padding-bottom:3rem;border-bottom:1px solid var(--border);">
+  <div class="container">
+    <p class="section-label reveal">Get In Touch</p>
+    <h1 class="reveal reveal-delay-1">Contact</h1>
+    <p class="lead reveal reveal-delay-2" style="max-width:540px;margin-top:1rem;">
+      Whether you'd like to collaborate on research, discuss consciousness 
+      theory, join a yoga class, or simply say hello — I'd love to hear from you.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT CONTENT -->
+<section>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:2fr 1.2fr;gap:4rem;align-items:start;">
+
+      <!-- FORM -->
+      <div class="reveal">
+        <h2 style="margin-bottom:0.5rem;font-size:1.6rem;">Send a Message</h2>
+        <p style="margin-bottom:2rem;font-size:0.88rem;">
+          I typically respond within 2–3 business days.
+        </p>
+
+        <!-- 
+          FORMSPREE SETUP:
+          Replace the action URL below with your Formspree endpoint.
+          1. Go to https://formspree.io
+          2. Create a new form → get your endpoint URL
+          3. Replace action="https://formspree.io/f/YOUR_FORM_ID"
+        -->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          id="contactForm"
+        >
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+
+          <label for="subject">Subject / Interest</label>
+          <select id="subject" name="subject">
+            <option value="">Select a topic…</option>
+            <option value="research">Research Collaboration</option>
+            <option value="theory">Consciousness Theory Discussion</option>
+            <option value="yoga">Yoga Classes / Retreats</option>
+            <option value="opportunity">Career / Opportunity</option>
+            <option value="media">Media / Press</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="What would you like to talk about?" required></textarea>
+
+          <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_subject" value="New message from NSR website" />
+
+          <div style="margin-top:1.5rem;">
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:0.9rem;">
+              Send Message
+            </button>
+          </div>
+        </form>
+
+        <!-- Success message (shown after JS submit) -->
+        <div class="form-success" id="formSuccess">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" style="margin:0 auto 1rem;">
+            <circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/>
+          </svg>
+          <h3 style="margin-bottom:0.5rem;">Message Sent</h3>
+          <p style="font-size:0.9rem;">Thank you for reaching out. I'll be in touch soon.</p>
+        </div>
+      </div>
+
+      <!-- INFO SIDEBAR -->
+      <div class="reveal reveal-delay-1">
+        <h3 style="margin-bottom:1.5rem;font-size:1.3rem;">Contact Information</h3>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <p style="font-size:0.75rem;color:var(--text-subtle);margin-bottom:0.2rem;font-family:'DM Mono',monospace;">EMAIL</p>
+            <a href="mailto:sr.nanda.k@gmail.com" style="font-size:0.9rem;color:var(--text);">sr.nanda.k@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p style="font-size:0.75rem;color:var(--text-subtle);margin-bottom:0.2rem;font-family:'DM Mono',monospace;">LOCATION</p>
+            <p style="font-size:0.9rem;color:var(--text);">Zürich, Switzerland</p>
+          </div>
+        </div>
+
+        <div style="height:1px;background:var(--border);margin:1.5rem 0;"></div>
+
+        <h4 style="margin-bottom:1rem;font-size:1rem;">Professional Profiles</h4>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <a href="https://scholar.google.com/citations?user=_tRJVvgAAAAJ&hl=en"
+             target="_blank" rel="noopener" class="social-link" style="justify-content:flex-start;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+            </svg>
+            Google Scholar
+          </a>
+          <a href="https://www.linkedin.com/in/nandakumarsr/"
+             target="_blank" rel="noopener" class="social-link" style="justify-content:flex-start;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            LinkedIn
+          </a>
+          <!-- REPLACE href with your actual CV PDF -->
+          <a href="#" class="social-link" style="justify-content:flex-start;" download>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download CV
+          </a>
+        </div>
+
+        <div style="height:1px;background:var(--border);margin:1.5rem 0;"></div>
+
+        <!-- Open to work callout -->
+        <div style="padding:1.2rem;background:var(--accent-light);border-radius:var(--radius-lg);border:1px solid var(--accent);">
+          <p style="font-size:0.75rem;font-family:'DM Mono',monospace;letter-spacing:0.08em;color:var(--accent);margin-bottom:0.5rem;">OPEN TO OPPORTUNITIES</p>
+          <p style="font-size:0.85rem;color:var(--text);">
+            Actively seeking roles in:
+          </p>
+          <ul style="list-style:none;margin-top:0.5rem;">
+            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">→ Industry R&D (AI, Neuromorphic)</li>
+            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">→ Academic Research</li>
+            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">→ Research Institutes (incl. CERN)</li>
+            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">→ Consciousness Science Labs</li>
+          </ul>
+        </div>
+
+      </div><!-- /sidebar -->
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="nav-logo" style="font-size:1.1rem;">N<span>.</span>S<span>.</span>R</a>
+    <nav class="footer-links">
+      <a href="research.html">Research</a>
+      <a href="yoga.html">Yoga</a>
+      <a href="theory.html">Theory</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2025 Nandakumar Sasidharan Rajalekshmi · Zürich</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Contact form AJAX (prevent redirect for Formspree)
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        success.classList.add('visible');
+      } else {
+        alert('Something went wrong. Please email sr.nanda.k@gmail.com directly.');
+      }
+    } catch {
+      alert('Network error. Please email sr.nanda.k@gmail.com directly.');
+    }
+  });
+</script>
+</body>
+</html>
