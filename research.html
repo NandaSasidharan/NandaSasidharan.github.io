@@ -102,8 +102,8 @@
     <div class="timeline">
 
       <div class="timeline-item reveal">
-        <p class="timeline-date">Jan 2016 – Feb 2019</p>
-        <h3 style="margin-bottom:0.5rem;">PhD — New Jersey Institute of Technology</h3>
+        <p class="timeline-date">Jan 2016 &ndash; Feb 2019</p>
+        <h3 style="margin-bottom:0.5rem;">PhD &mdash; New Jersey Institute of Technology</h3>
         <p style="max-width:620px;">
           Doctoral research in the Department of Electrical and Computer Engineering. 
           Focused on high-performance learning systems using low-precision nanoscale 
@@ -122,20 +122,20 @@
             <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
           </svg>
           <span style="font-size:0.8rem;color:var(--accent);">
-            <!-- ADD AWARD NAME HERE --> Best Thesis Award — <!-- ADD YEAR/INSTITUTION HERE -->
+            Outstanding Graduate Student Award & Hashimoto Prize for Doctoral Candidate &mdash; 2019
           </span>
         </div>
       </div>
 
       <div class="timeline-item reveal">
-        <p class="timeline-date">April 2019 – March 2021</p>
-        <h3 style="margin-bottom:0.5rem;">Postdoctoral Researcher — IBM Research Zürich</h3>
+        <p class="timeline-date">April 2019 &ndash; March 2021</p>
+        <h3 style="margin-bottom:0.5rem;">Postdoctoral Researcher &mdash; IBM Research Zürich</h3>
         <p style="max-width:620px;">
-          Joined the Neuromorphic Devices & Systems group at IBM Research Zürich. 
+          Joined the In-Memory Computing group at IBM Research Zürich. 
           Investigated hardware-aware training techniques for analog AI accelerators, 
           characterised precision limits of Phase-Change Memory (PCM) devices, 
           and contributed to foundational work on in-memory computing 
-          for privacy-preserving AI (homomorphic encryption).
+          for homomorphic encryption.
         </p>
         <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
           <span class="tag">PCM Devices</span>
@@ -148,10 +148,20 @@
           📄 Patent granted: In-memory computing architecture for homomorphic encryption 
           <!-- ADD PATENT NUMBER / LINK HERE -->
         </p>
+        <!-- Add award badge if applicable -->
+        <div style="margin-top:1rem;padding:0.7rem 1rem;background:var(--accent-light);border-radius:var(--radius);display:inline-flex;align-items:center;gap:0.6rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+          </svg>
+          <span style="font-size:0.8rem;color:var(--accent);">
+            Outstanding Technical Achievement Award &ndash; Analog AI Chip Cloud Demo &mdash; 2019
+          </span>
+        </div>
+        
       </div>
 
       <div class="timeline-item reveal">
-        <p class="timeline-date">2021 – Present</p>
+        <p class="timeline-date">2021 &ndash; Present</p>
         <h3 style="margin-bottom:0.5rem;">Independent Research & Exploration — Zürich</h3>
         <p style="max-width:620px;">
           Pursuing independent research bridging neuromorphic computing, consciousness 
@@ -178,7 +188,7 @@
       <em>Low-Precision Nanoscale Devices</em>
     </h2>
     <p class="reveal reveal-delay-2" style="margin-bottom:3rem;max-width:600px;">
-      New Jersey Institute of Technology · January 2016 – February 2019
+      New Jersey Institute of Technology · January 2016 &ndash; February 2019
     </p>
 
 
@@ -188,31 +198,40 @@
       <div>
         <h4 class="reveal" style="margin-bottom:0.8rem;">Thesis Overview</h4>
         <p class="reveal" style="margin-bottom:1rem;font-size:0.92rem;">
-          The central challenge of neuromorphic computing is bridging the gap between 
-          the energy efficiency of biological neural systems and the precision demands 
-          of conventional digital deep learning. This thesis tackled that gap by 
-          exploiting the inherent stochasticity of nanoscale non-volatile memory (NVM) 
-          devices as a computational resource rather than a liability.
+          Computers were an imitation of human brain from the very beginning. 
+          Though we were aware of the neural architecture of the brain, technology 
+          at the time favored the von-Neumann architecture. While the memory and processing are 
+          at the same physical location in a biological neural network, they are separate
+          in the von-Neumann architecture. This meant constant data shuffling and were
+          a major source of energy inefficiency. Supercomputers consuming millions of Watts 
+           still could not perform tasks that human brain can with mere 20 Watts.    
         </p>
         <p class="reveal" style="margin-bottom:1rem;font-size:0.92rem;">
-          Key contributions include novel training algorithms that are robust to 
-          device-level noise, theoretical analysis of precision-accuracy trade-offs 
-          in multi-layer networks, and experimental validation on resistive RAM (RRAM) 
-          and phase-change memory (PCM) testbeds.
+          Simply adopting the neural architecture was not sufficient. The energy efficiency
+          problem demanded, we also address how we implement them on the physical hardware. 
+          This is where Neuromorphic engineering and In-Memory Computing came in. Both of these 
+          approaches attempts to process signals uing the physical characteristics of arrays 
+          of memory devices. 
+        </p>
+        <p class="reveal" style="margin-bottom:1rem;font-size:0.92rem;">
+          In this thesis, we brings to light the key challenges faced in this field, 
+          and directly addresses the precision limits of these memory device by 
+          experimental demonstration of several architecture modifications to maintain 
+          high accuracy. 
         </p>
 
         <!-- PLACEHOLDER: Add main result figures here -->
-        <div class="reveal" style="border:1px dashed var(--border);border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-top:1.5rem;background:var(--bg);">
-          <p style="font-size:0.8rem;color:var(--text-subtle);">
+        <!-- <div class="reveal" style="border:1px dashed var(--border);border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-top:1.5rem;background:var(--bg);">
+          <p style="font-size:0.8rem;color:var(--text-subtle);"> -->
             <!-- ADD RESEARCH FIGURE HERE --><br>
-            E.g., accuracy vs. precision curve, device array image, or architecture diagram.<br>
+            <!-- E.g., accuracy vs. precision curve, device array image, or architecture diagram.<br>
             Replace this block with: <code>&lt;img src="fig1.png" alt="..."&gt;</code>
           </p>
-        </div>
+        </div> -->
       </div>
 
       <!-- Right: Key Results + Code -->
-      <div>
+      <!-- <div>
         <h4 class="reveal" style="margin-bottom:0.8rem;">Key Results</h4>
         <ul class="reveal" style="list-style:none;margin-bottom:1.5rem;">
           <li style="padding:0.6rem 0;border-bottom:1px solid var(--border-light);font-size:0.9rem;">
@@ -222,18 +241,18 @@
             ✦ Stochastic weight update rule tolerant to asymmetric device noise
           </li>
           <li style="padding:0.6rem 0;border-bottom:1px solid var(--border-light);font-size:0.9rem;">
-            ✦ 10×–100× energy reduction potential over GPU-based training
+            ✦ 10x-100x energy reduction potential over GPU-based training
           </li>
           <li style="padding:0.6rem 0;font-size:0.9rem;">
             ✦ Results published in <em>Nature Communications</em> and <em>Nano Letters</em>
           </li>
-        </ul>
+        </ul> -->
 
         <!-- Code sample placeholder -->
-        <div class="reveal">
-          <p style="font-size:0.78rem;color:var(--text-subtle);margin-bottom:0.5rem;font-family:'DM Mono',monospace;">
+        <!-- <div class="reveal">
+          <p style="font-size:0.78rem;color:var(--text-subtle);margin-bottom:0.5rem;font-family:'DM Mono',monospace;"> -->
             <!-- ADD CODE SNIPPET HERE -->
-          </p>
+          <!-- </p>
           <div class="code-block" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem 1.5rem;font-family:'DM Mono',monospace;font-size:0.82rem;color:var(--text-muted);">
 # Example: Stochastic weight update for analog arrays
 # (Replace with your actual code snippet)
@@ -250,16 +269,17 @@ def analog_sgd_step(W, grad, lr, noise_std):
     W_new = W + delta + noise
     return np.clip(W_new, W_min, W_max)
           </div>
-        </div>
+        </div> -->
 
         <!-- Second figure placeholder -->
-        <div class="reveal reveal-delay-1" style="border:1px dashed var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;margin-top:1.5rem;background:var(--bg);">
-          <p style="font-size:0.8rem;color:var(--text-subtle);">
-            <!-- ADD SECOND RESEARCH FIGURE HERE --><br>
+        <!-- <div class="reveal reveal-delay-1" style="border:1px dashed var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;margin-top:1.5rem;background:var(--bg);">
+          <p style="font-size:0.8rem;color:var(--text-subtle);"> -->
+            <!-- ADD SECOND RESEARCH FIGURE HERE -->
+             <!-- <br>
             E.g., convergence plots, device characterisation data.
           </p>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -275,33 +295,45 @@ def analog_sgd_step(W, grad, lr, noise_std):
       <a href="https://scholar.google.com/citations?user=_tRJVvgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
     </p>
 
+    
+
     <div class="reveal">
-      <!-- PUBLICATION 1 — replace with actual details -->
+      <!-- PUBLICATION 1 -->
       <div class="pub-entry">
-        <p class="pub-venue">Nature Communications · <!-- ADD YEAR --></p>
-        <p class="pub-title"><!-- ADD PAPER TITLE --></p>
-        <p class="pub-authors">N. S. Rajalekshmi et al. · <a href="#" target="_blank" rel="noopener">PDF ↗</a></p>
+        <p class="pub-venue">Nano Letters · 2016</p>
+        <p class="pub-title">A 250 mV Cu/SiO2/W Memristor with Half-Integer Quantum
+Conductance States</p>
+        <p class="pub-authors">N. S. Rajalekshmi et al. · <a href="./docs/nanoletter2016_nsr.pdf" target="_blank" rel="noopener">PDF ↗</a></p>
       </div>
 
       <!-- PUBLICATION 2 -->
       <div class="pub-entry">
-        <p class="pub-venue">Nano Letters · <!-- ADD YEAR --></p>
-        <p class="pub-title"><!-- ADD PAPER TITLE --></p>
-        <p class="pub-authors">N. S. Rajalekshmi et al. · <a href="#" target="_blank" rel="noopener">PDF ↗</a></p>
+        <p class="pub-venue">IEEE nanotechnology magazine · 2018</p>
+        <p class="pub-title">Building Brain-Inspired Computing Systems - Examining the role of nanoscale devices</p>
+        <p class="pub-authors">N. S. Rajalekshmi et al. · <a href="./docs/IEEEmag2018_nsr.pdf" target="_blank" rel="noopener">PDF ↗</a></p>
       </div>
+
+      <!-- PUBLICATION 1 — replace with actual details -->
+      <div class="pub-entry">
+        <p class="pub-venue">Frontiers in Neuroscience · 2020 <!-- ADD YEAR --></p>
+        <p class="pub-title">Mixed-Precision Deep Learning Based on Computational Memory</p>
+        <p class="pub-authors">N. S. Rajalekshmi et al. · <a href="./docs/Frontiers2020_nsr.pdf" target="_blank" rel="noopener">PDF ↗</a></p>
+      </div>
+
+      
 
       <!-- PUBLICATION 3 -->
       <div class="pub-entry">
-        <p class="pub-venue"><!-- ADD VENUE & YEAR --></p>
-        <p class="pub-title"><!-- ADD PAPER TITLE --></p>
-        <p class="pub-authors"><!-- ADD AUTHORS --> · <a href="#" target="_blank" rel="noopener">PDF ↗</a></p>
+        <p class="pub-venue">Scientific Reports · 2020</p>
+        <p class="pub-title">Supervised learning in SNNs with PCM synapses</p>
+        <p class="pub-authors">N. S. Rajalekshmi et al. · · <a href="./docs/ScientificReports2020_nsr.pdf" target="_blank" rel="noopener">PDF ↗</a></p>
       </div>
 
       <!-- PUBLICATION 4 -->
       <div class="pub-entry">
-        <p class="pub-venue">Patent · <!-- ADD YEAR --></p>
+        <p class="pub-venue">Patent · 2022</p>
         <p class="pub-title">In-Memory Computing Architecture for Homomorphic Encryption</p>
-        <p class="pub-authors">IBM Research Zürich — <!-- ADD PATENT NUMBER --></p>
+        <p class="pub-authors">IBM Research Zürich — <a target="_blank"  rel="noopener" href="https://patents.google.com/patent/US11907380B2/en">US11907380B2</a></p>
       </div>
 
       <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--text-subtle);">
@@ -326,24 +358,23 @@ def analog_sgd_step(W, grad, lr, noise_std):
         <h4 style="margin-bottom:0.5rem;">Grant Award Coverage</h4>
         <p style="font-size:0.88rem;margin-bottom:1rem;">
           <!-- ADD GRANT NAME, AMOUNT, AND SOURCE HERE -->
-          Coverage of a research grant awarded for work in neuromorphic computing 
+          IBM PhD fellowship awarded for work in neuromorphic computing 
           and AI hardware. 
         </p>
         <!-- REPLACE href with actual news link -->
-        <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Read News Coverage ↗</a>
+        <a href="https://bioengineer.org/njit-graduate-student-wins-ibm-fellowship-to-develop-brain-inspired-computing-systems/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Read News Coverage ↗</a>
       </div>
 
       <!-- Best Thesis Award -->
       <div class="card reveal reveal-delay-1">
         <p class="timeline-date" style="margin-bottom:0.5rem;">Award</p>
-        <h4 style="margin-bottom:0.5rem;">Best Thesis Award</h4>
+        <h4 style="margin-bottom:0.5rem;">Hashimoto Prize for Doctoral Candidate</h4>
         <p style="font-size:0.88rem;margin-bottom:1rem;">
           <!-- ADD AWARD DETAILS: institution, year, criteria -->
-          Recognised for outstanding doctoral dissertation in electrical and 
-          computer engineering.
+          Recognised with Outstanding Graduate Student Award and Hashimoto Prize for Doctoral Candidate in ECE, NJIT
         </p>
         <!-- REPLACE href or remove if no link -->
-        <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Learn More ↗</a>
+        <!-- <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Learn More ↗</a> -->
       </div>
 
     </div>
